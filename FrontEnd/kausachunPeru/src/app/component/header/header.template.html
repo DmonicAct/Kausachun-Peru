@@ -7,7 +7,17 @@
 						<a class="nav-link colorWhite" href="/">Inicio</a>
 					</li>
 					<li class="nav-item navItem">
-						<a ngbDropdown class="nav-link colorWhite">Acerca de</a>
+						<div ngbDropdown class="dropdown">
+							<a class="nav-link dropdown-toggle colorWhite" href="#" role="button" id="dropdownMenuLink"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Acerca de
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#">La comunidad campesina</a>
+								<a class="dropdown-item" href="#">Entidades asociadas</a>
+							</div>
+						</div>
+						<!-- <a ngbDropdown class="nav-link colorWhite">Acerca de</a> -->
 					</li>
 				</ul>
 			</div>
