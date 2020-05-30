@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'quiero-ayudar',
+  selector: 'quiero-ayudar-component',
   templateUrl: 'quieroAyudar.template.html',
   styleUrls: ['quieroAyudar.template.scss']
 })

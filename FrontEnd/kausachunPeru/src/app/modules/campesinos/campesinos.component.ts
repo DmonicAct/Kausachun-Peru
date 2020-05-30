@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'campesinos',
+  selector: 'campesinos-component',
   templateUrl: 'campesinos.template.html',
   styleUrls: ['campesinos.template.scss']
 })
