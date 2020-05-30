@@ -8,6 +8,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
+  },
   { path: 'campesinos', loadChildren: () => import('./modules/campesinos/campesinos.module').then(m => m.CampesinosModule) },
   { path: 'empresas', loadChildren: () => import('./modules/empresas/empresas.module').then(m => m.EmpresasModule) },
   { path: 'quieroAyudar', loadChildren: () => import('./modules/quieroApoyar/quieroApoyar.module').then(m => m.QuieroApoyarModule) },
