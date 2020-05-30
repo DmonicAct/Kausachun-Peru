@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'campesinos',
-  templateUrl: 'campesinos.html',
-  styleUrls: ['campesinos.scss']
+  templateUrl: 'campesinos.template.html',
+  styleUrls: ['campesinos.template.scss']
 })
 export class CampesinosComponent implements OnInit {
   ngOnInit(): void {

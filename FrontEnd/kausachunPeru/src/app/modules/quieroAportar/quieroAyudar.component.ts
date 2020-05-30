@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'quiero-ayudar',
-  templateUrl: 'quieroAyudar.html',
-  styleUrls: ['quieroAyudar.scss']
+  templateUrl: 'quieroAyudar.template.html',
+  styleUrls: ['quieroAyudar.template.scss']
 })
 export class QuieroAyudarComponent implements OnInit {
   ngOnInit(): void {
