@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  nombre:string = "";
+  apellido:string = "";
   ngOnInit() {
-   
+   this.nombre="GG";
+   this.apellido="GG x2";
   }
 
 }

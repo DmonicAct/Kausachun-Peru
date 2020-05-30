@@ -16,7 +16,12 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule.forChild([
+      {
+        path: '',
+        component: CampesinosComponent
+      }
+    ])
   ]
 })
 export class CampesinosModule {}
