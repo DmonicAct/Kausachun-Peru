@@ -28,11 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "vendor/jasny/jasny-bootstrap.min.css"
+              "src/styles.scss"
             ],
             "scripts": [
-              "vendor/jasny/jasny-bootstrap.min.js"
             ]
           },
           "configurations": {
