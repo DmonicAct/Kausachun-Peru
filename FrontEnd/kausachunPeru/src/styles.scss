@@ -2,3 +2,203 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Various colors
+$text-color: #676a6c;   // Body text
+$gray: #f3f3f4;         // Background wrapper color
+$light-gray: #D1DADE;   // Default label, badge
+$label-badge-color: #5E5E5E;
+$light-blue:#f3f6fb;
+
+$border-color: #e7eaec;     // IBox border
+//Lists (tables)
+$list-border-color: #e7eaec;
+$list-border-color-hover: #b8d6f4;
+$list-bg-color-selected: #d9edf7;
+
+/* TABLES */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .table-bordered {
+    border: 1px solid #EBEBEB;
+  }
+  
+  .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    background-color: #F5F5F6;
+    border-bottom-width: 1px;
+  }
+  
+  .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #e7e7e7;
+  }
+  
+  .table > thead > tr > th {
+    border-bottom: 1px solid #DDDDDD;
+    vertical-align: bottom;
+  }
+  
+  .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid $border-color;
+    line-height: 1.42857;
+    padding: 2px;
+    vertical-align: top;
+  }
+  
+  .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .table > thead > tr > th input,
+  .table > thead > tr > th .checkbox {
+    margin-top: 0;
+  }
+  
+  .table-hover > tbody > tr td {
+    border-top: 1px solid $list-border-color;
+  }
+  
+  .table-hover > tbody > tr:hover td {
+    border-top: 1px solid $list-border-color-hover;
+    border-bottom: 1px solid $list-border-color-hover;
+    background-color: $list-bg-color-selected;
+  }
+  
+  .table-hover > tbody > tr.selected td,
+  .table-hover > tbody > tr.selected:hover td {
+    border-top: 1px solid $list-border-color-hover;
+    border-bottom: 1px solid $list-border-color-hover;
+    background-color: darken($color: $list-bg-color-selected, $amount: 5);
+  }
+  
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $light-blue;
+  }
+
+  table.issue-tracker tbody tr td {
+    vertical-align: middle;
+    height: 50px;
+  }
+
+  /* WRAPPERS */
+
+#wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .wrapper {
+    padding: 0 20px;
+  }
+  
+  .wrapper-content {
+    padding: 20px 10px 40px;
+  }
+  
+  #page-wrapper {
+    padding: 0 15px;
+    //min-height: 568px;
+    position: relative !important;
+  }
+  
+  @media (min-width: 768px) {
+    #page-wrapper {
+      position: inherit;
+      margin: 0 0 0 240px;
+      //min-height: 2002px;
+    }
+  }
+  
+  .title-action {
+    text-align: right;
+    padding-top: 30px;
+  }
+  
+  .ibox-content h1, .ibox-content h2, .ibox-content h3, .ibox-content h4, .ibox-content h5,
+  .ibox-title h1, .ibox-title h2, .ibox-title h3, .ibox-title h4, .ibox-title h5 {
+    margin-top: 5px;
+  }
+  
+  ul.unstyled, ol.unstyled {
+    list-style: none outside none;
+    margin-left: 0;
+  }
+  
+  .big-icon {
+    font-size: 160px !important;
+    color: #e5e6e7;
+  }
+
+  
+
+  .wrapper-content {
+    padding: 20px 10px 40px;
+  }
+
+  @media (max-width: 768px) {
+    .wrapper-content {
+      padding: 30px 0 40px;
+    }
+
+}
+.wrapper .middle-box {
+    margin-top: 140px;
+  }
+  
+  // Fix modal in Safari browser
+body.modal-open .wrapper-content.animated {
+    -webkit-animation: none;
+    -ms-animation-nam: none;
+    animation: none;
+  }
+  .animated.modal.fade .modal-dialog {
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .fullscreen-ibox-mode .animated {
+    animation: none;
+  }
+  body.modal-open .wrapper-content.animated {
+    -webkit-animation: none;
+    -ms-animation-nam: none;
+    animation: none;
+  }
+  body.modal-open .animated {
+    animation-fill-mode: initial;
+    z-index: inherit
+  }
+  
+.fullscreen-video .animated {
+    animation: none;
+  }
+  body.tour-open .animated {
+    animation-fill-mode: initial;
+  }    
+
+  /* PAGINATION */
+/* 
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #f4f4f4;
+    border-color: #DDDDDD;
+    color: inherit;
+    cursor: default;
+    z-index: 2;
+  }
+  
+  .pagination > li > a, .pagination > li > span {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    color: inherit;
+    float: left;
+    line-height: 1.42857;
+    margin-left: -1px;
+    padding: 4px 10px;
+    position: relative;
+    text-decoration: none;
+  } */

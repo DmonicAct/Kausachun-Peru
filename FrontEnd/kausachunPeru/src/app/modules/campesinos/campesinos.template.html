@@ -62,55 +62,55 @@
                                 <div class="form-group">
                                     <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Tipo Solicitud*</h2>
-                                        <select matNativeControl required class="letraOpenSans14">
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
+                                        <select name="select" matNativeControl required [(ngModel)]="selectedItem" class="letraOpenSans14">
+                                            <!-- <option value="" selected></option> -->
+                                            <option *ngFor="let item of itemsTipoSolicitud" [value]="item.id" class="letraOpenSans16Combo">
+                                              {{item.nombre}}
+                                            </option>
                                         </select>
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
                                     <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Nombres*</h2>
-                                        <input matInput>
+                                        <input matInput name="nombre" [(ngModel)]="formulario.nombres">
                                     </mat-form-field>
                                     <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Apellidos*</h2>
-                                        <input matInput>
+                                        <input matInput name="apellidos" [(ngModel)]="formulario.apellidos">
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
                                     <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">DNI*</h2>
-                                        <input matInput>
+                                        <input matInput name="dni" [(ngModel)]="formulario.dni">
                                     </mat-form-field>
                                     <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Provincia*</h2>
-                                        <input matInput>
+                                        <h2 class="letraOpenSans16Label" >Provincia*</h2>
+                                        <input matInput name="provincia" [(ngModel)]="formulario.provincia">
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
                                     <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Telefono o celular de contacto*</h2>
-                                        <input matInput>
+                                        <input matInput name="telefono" [(ngModel)]="formulario.telefono">
                                     </mat-form-field>
                                     <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Correo Electrónico*</h2>
-                                        <input matInput>
+                                        <h2 class="letraOpenSans16Label" >Correo Electrónico*</h2>
+                                        <input matInput name="correo" [(ngModel)]="formulario.correo">
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
                                     <mat-form-field class="col-10">
-                                        <h2 class="letraOpenSans16Label">Detalle de su solicitud*</h2>
-                                        <textarea matInput rows="10"></textarea>
+                                        <h2 class="letraOpenSans16Label" >Detalle de su solicitud*</h2>
+                                        <textarea matInput name="detalle" rows="10" [(ngModel)]="formulario.detalle"></textarea>
                                     </mat-form-field>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-12 text-center py-5">
-                        <button type="button" class="btn btn-light letraOpenSans18 rounded-0" style="width: 20%;">
+                        <button type="button" class="btn btn-light letraOpenSans18 rounded-0" style="width: 20%;" (click)="OnGuardar()">
                             Enviar
                         </button>
                     </div>
