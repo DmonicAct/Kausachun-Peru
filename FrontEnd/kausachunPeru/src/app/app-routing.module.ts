@@ -47,6 +47,13 @@ const routes: Routes = [
         (m) => m.adminLoginModule
       ),
   },
+  {
+    path: "admin/general",
+    loadChildren: () =>
+      import("./modules/adminGeneral/adminGeneral.module").then(
+        (m) => m.adminGeneralModule
+      ),
+  },
 ];
 
 @NgModule({
