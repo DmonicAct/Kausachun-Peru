@@ -1,9 +1,17 @@
-.divTop {
-  background-image: url("../../../assets/ComunidadCampesina/Fondo1.png");
+.introduccion {
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("/assets/ComunidadCampesina/fondo4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: cover;
-  height: 70vh;
-  width: auto;
-  color: white;
+}
+
+.colorPastel {
+  color: #efe5e0;
 }
 
 .divHoyPorTi {

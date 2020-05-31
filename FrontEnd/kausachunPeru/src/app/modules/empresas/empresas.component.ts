@@ -9,4 +9,8 @@ export class EmpresasComponent implements OnInit {
   ngOnInit(): void {
     console.log("INIT EMRPESAS");
   }
+
+  goToSection(tag) {
+    document.getElementById(tag).scrollIntoView({ behavior: "smooth" });
+  }
 }
