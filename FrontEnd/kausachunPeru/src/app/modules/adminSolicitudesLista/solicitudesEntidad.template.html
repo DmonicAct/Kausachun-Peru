@@ -59,9 +59,12 @@
           </ng-container>
 
           <ng-container matColumnDef="details">
-            <th mat-header-cell *matHeaderCellDef> Details </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Details </th>
             <td mat-cell *matCellDef="let element">
-              <button (click)="redirectToDetails(element)">
+             <!--  <button (click)="redirectToDetails(element)">
+                  <mat-icon class="mat-18"></mat-icon>
+              </button> -->
+               <button [routerLink]="['/admin/solicitudes_entidad/detalle']">
                   <mat-icon class="mat-18"></mat-icon>
               </button>
             </td>

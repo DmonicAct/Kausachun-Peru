@@ -114,9 +114,14 @@ export class SolicitudesEntidadComponent implements OnInit {
     debugger;
  
   } */
-  public redirectToDetails = (id: string) => {
+  public redirectToDetails = (id) => {
     console.log(id);
-    this.router.navigate['/home']
+    try{
+      this.router.navigate['/home'];
+    }catch(e){
+      console.log(e);
+    }
+    
   }
  
 }

@@ -75,6 +75,13 @@ const routes: Routes = [
         (m) => m.DetalleSolicitudEntidadModule
       ),
   },
+  {
+    path: "admin/campesinos/detalle",
+    loadChildren: () =>
+      import("./modules/adminCampesino/detalles/detalleSolicitudCampesino.module").then(
+        (m) => m.DetalleSolicitudCampesinoModule
+      ),
+  },
 ];
 
 @NgModule({
