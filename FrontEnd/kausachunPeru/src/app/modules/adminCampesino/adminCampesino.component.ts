@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 
 import { MatTableDataSource } from "@angular/material/table";
 import { MatPaginator, MatSort } from "@angular/material";
+import { DomSanitizer } from "@angular/platform-browser";
+import { MatIconRegistry } from "@angular/material/icon";
 
 export interface tableElement {
   cod: string;
@@ -101,8 +103,12 @@ export class adminCampesinoComponent implements OnInit {
     "details",
   ];
 
-  constructor() {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     this.dataSource = new MatTableDataSource(ELEMENT_DATA);
+    iconRegistry.addSvgIcon(
+      "thumbs-up",
+      sanitizer.bypassSecurityTrustResourceUrl("assets/Admin/buscarIcon.svg")
+    );
   }
 
   ngOnInit(): void {

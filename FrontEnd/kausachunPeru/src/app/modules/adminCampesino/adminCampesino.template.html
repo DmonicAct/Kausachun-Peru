@@ -23,13 +23,13 @@
             <div class="col-md-12">
                 <label class="col-md-1">Búsqueda</label>
                 <mat-form-field class="col-md-4 pull-left" mat-form-field floatLabel="never">
-                    <input matInput type="text"  (keyup)="applyFilter($event)">
+                    <input matInput type="text" (keyup)="applyFilter($event)">
                     <mat-placeholder class="placeholder">Buscar....</mat-placeholder>
                 </mat-form-field>
             </div>
-           
+
         </div>
-        
+
 
         <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
@@ -69,16 +69,13 @@
             </ng-container>
 
             <ng-container matColumnDef="details">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Details </th>
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Detalle </th>
                 <td mat-cell *matCellDef="let element">
-                 <!--  <button (click)="redirectToDetails(element)">
-                      <mat-icon class="mat-18"></mat-icon>
-                  </button> -->
-                   <button [routerLink]="['/admin/campesinos/detalle']">
-                      <mat-icon class="mat-18"></mat-icon>
-                  </button>
+                    <mat-icon svgIcon="thumbs-up" aria-hidden="false" class="iconLupa"
+                        [routerLink]="['/admin/campesinos/detalle']" aria-label="Example thumbs up SVG icon">
+                    </mat-icon>
                 </td>
-              </ng-container>
+            </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

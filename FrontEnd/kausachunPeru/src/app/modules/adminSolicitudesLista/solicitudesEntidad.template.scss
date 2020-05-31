@@ -9,40 +9,49 @@ table {
   width: 100%;
 }
 
+.iconLupa {
+  height: 1.5rem;
+  width: 1.5rem;
+  &:hover {
+    cursor: pointer;
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+}
+
 .mat-form-field {
   font-size: 14px;
   width: 100%;
 }
 
 [mat-row].remove-background {
-  background: none ;
+  background: none;
 }
 
-.highlight{
-  background: #42A948; /* green */
+.highlight {
+  background: #42a948; /* green */
 }
 
-CSS
-table {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    min-width: 500px;
+CSS table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
 }
 
 th.mat-header-cell {
-    text-align: left;
-    max-width: 300px;
+  text-align: left;
+  max-width: 300px;
 }
 
 table {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    min-width: 500px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
 }
- 
+
 th.mat-header-cell {
-    text-align: left;
-    max-width: 300px;
+  text-align: left;
+  max-width: 300px;
 }

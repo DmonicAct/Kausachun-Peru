@@ -21,10 +21,10 @@ export class CampesinoService {
     this.urlPersona = this.apiEndpoint + "Persona/add";
   }
 
-  guardarPersona(body: String) {
-    console.log("BODY", body);
+  guardarPersona(persona: personaModel) {
+    console.log("BODY", JSON.stringify(persona));
     console.log("URL", this.urlPersona);
-    return this.http.post(this.urlPersona, body).pipe(
+    return this.http.post(this.urlPersona, persona).pipe(
       catchError((e) => {
         if (e.status == 400) {
           return throwError(e);
@@ -35,22 +35,12 @@ export class CampesinoService {
         return throwError(e);
       })
     );
-    // .subscribe({
-    //   next: (data) => {
-    //     console.log("PERSONA ADDED", data);
-    //   },
-    //   error: (error) => {
-    //     console.log("PERSONA ERROR", error);
-    //   },
-    // });
   }
 
   guardarFormularioCampesino(formulario: formCampesino, persona: personaModel) {
     console.log("FORMULARIO", formulario);
 
-    const personaAdded = this.guardarPersona(
-      JSON.stringify(persona)
-    ).subscribe();
+    const personaAdded = this.guardarPersona(persona).subscribe();
 
     console.log("PERSONA ADDED", personaAdded);
     // formulario.fecha = new Date().toISOString();
