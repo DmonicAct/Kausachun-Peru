@@ -2,9 +2,7 @@ import { SolicitudesEntidadComponent } from "./solicitudesEntidad.component";
 import { Routes, RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import {PaginationModule} from 'ngx-bootstrap/pagination';
-import { FormsModule } from '@angular/forms';
-import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import { FormsModule } from "@angular/forms";
 import {
   MatInputModule,
   MatPaginatorModule,
@@ -12,7 +10,7 @@ import {
   MatSortModule,
   MatTableModule,
   MatFormFieldModule,
-  MatIconModule
+  MatIconModule,
 } from "@angular/material";
 const routes: Routes = [
   {
@@ -30,7 +28,7 @@ const routes: Routes = [
     MatProgressSpinnerModule,
     MatSortModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
   ],
   imports: [
     RouterModule,
