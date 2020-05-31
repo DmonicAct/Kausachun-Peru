@@ -53,6 +53,7 @@ export class CampesinosComponent implements OnInit {
 
   goToPage(ruta) {
     this.route.navigate([ruta]);
+    window.scrollTo(0, 0);
   }
   OnGuardar() {
     //Validar Datos
