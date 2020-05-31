@@ -1,5 +1,9 @@
 <div class="container-fluid container-position p-5" style="background-color: #efe5e0;">
-  <h1 class="letraAbril40">Campesinos</h1>
+  <div class="d-flex justify-content-between">
+    <h1 class="letraAbril40">Campesinos</h1>
+    <img src="../../../../assets/Admin/Vector.png" alt="btnAtras" class="imgBack"
+      (click)="goToPage('admin/campesinos')">
+  </div>
   <div class="row" style="height: 90%;">
     <div class="col-2 letraAbril18 p-5">
       <p>Código</p>
@@ -22,12 +26,12 @@
       <p>NA</p>
       <div class="form-group">
         <mat-form-field class="border border-dark px-2">
-            <select matNativeControl required class="letraOpenSans18">
-                <option value="Pendiente">Pendiente</option>
-                <option value="Aprobada">Aprobada</option>
-            </select>
+          <select matNativeControl required class="letraOpenSans18">
+            <option value="Pendiente">Pendiente</option>
+            <option value="Aprobada">Aprobada</option>
+          </select>
         </mat-form-field>
-    </div>
+      </div>
     </div>
     <div class="col-7 p-5">
       <p class="letraAbril18">Detalle</p>
@@ -47,10 +51,11 @@
         </mat-form-field>
       </div>
       <div class="text-center">
-        <button type="button" class="btn btn-dark letraOpenSans18 rounded-0" style="background-color: black; width:20%;">
+        <button type="button" class="btn btn-dark letraOpenSans18 rounded-0"
+          style="background-color: black; width:20%;">
           Guardar
         </button>
-      </div> 
+      </div>
     </div>
   </div>
 </div>

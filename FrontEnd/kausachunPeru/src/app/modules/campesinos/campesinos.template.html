@@ -136,11 +136,21 @@
                   </mat-form-field>
                   <mat-form-field class="col-6">
                     <h2 class="letraOpenSans16Label">Departamento *</h2>
-                    <input
-                      matInput
-                      name="provincia"
-                      [(ngModel)]="formulario.provincia"
-                    />
+                    <select
+                      name="select"
+                      matNativeControl
+                      required
+                      [(ngModel)]="selectedDpto"
+                      class="letraOpenSans16"
+                    >
+                      <option
+                        *ngFor="let item of itemsDepartamentos"
+                        [value]="item.id"
+                        class="letraOpenSans16Combo"
+                      >
+                        {{item.nombre}}
+                      </option>
+                    </select>
                   </mat-form-field>
                 </div>
                 <div class="form-group py-2">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "detalle-solicitud-campesino-component",
@@ -6,5 +7,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["detalleSolicitudCampesino.template.scss"],
 })
 export class DetalleSolicitudCampesinoComponent implements OnInit {
-  ngOnInit(): void {}
+  constructor(private route: Router) {}
+
+  ngOnInit() {}
+
+  goToPage(ruta) {
+    this.route.navigate([ruta]);
+  }
 }
