@@ -55,10 +55,24 @@ const routes: Routes = [
       ),
   },
   {
+    path: "admin/campesinos",
+    loadChildren: () =>
+      import("./modules/adminCampesino/adminCampesino.module").then(
+        (m) => m.adminCampesinoModule
+      ),
+  },
+  {
     path: "admin/solicitudes_entidad",
     loadChildren: () =>
       import("./modules/adminSolicitudesLista/solicitudesEntidad.module").then(
         (m) => m.SolicitudesEntidadModule
+      ),
+  },
+  {
+    path: "admin/solicitudes_entidad/detalle",
+    loadChildren: () =>
+      import("./modules/adminSolicitudesLista/detalles/detalleSolicitudEntidad.module").then(
+        (m) => m.DetalleSolicitudEntidadModule
       ),
   },
 ];
