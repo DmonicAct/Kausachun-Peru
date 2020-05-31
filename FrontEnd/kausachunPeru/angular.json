@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "vendor/jasny/jasny-bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "vendor/jasny/jasny-bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,6 +127,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "kausachunPeru"
 }
