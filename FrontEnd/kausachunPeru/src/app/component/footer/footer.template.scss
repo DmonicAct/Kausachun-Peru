@@ -1,7 +1,30 @@
 .footer {
     //position: absolute;
     bottom: 0px;
-    height: 180px;
     left: 0;
     right: 0;
+}
+.colorOliva {
+    color: #A7A970;
+}
+
+.letraAbril16 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 1.02rem;
+}
+  
+.letraOpenSans16 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.02rem;
+}
+
+.letraOpenSans18 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.02rem;
+    font-weight: bold;
+}
+  
+.letraOpenSans14 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
 }
