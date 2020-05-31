@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 
 @Component({
@@ -12,7 +13,9 @@ export class AppComponent implements OnInit {
   
   @ViewChild("header",{static:false})
   public Header:HeaderComponent;
-
+  
+  @ViewChild("footer",{static:false})
+  public Footer:FooterComponent;
   public constructor(private router: Router) {
 
   }
@@ -24,8 +27,10 @@ export class AppComponent implements OnInit {
   changeOfRoutes(){
     if(this.router.url === '/admin'){
       this.Header.booleanColor=false;
+      this.Footer.booleanFooter=false;
     }else{
       this.Header.booleanColor=true;
+      this.Footer.booleanFooter=true;
     }
   }
 }

@@ -1,82 +1,85 @@
-<div class="bg-transparent rounded position-sticky sticky-top topBar">
-  <div class="bg-transparent rounded">
-    <nav class="navbar navbar-expand-md navbar-light">
-			<div
-			class="collapse navbar-collapse order-1 order-md-0"
-			id="itemCollapse"
-		  >
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item navItem">
-				<a [ngClass]="{'colorWhite':booleanColor,'colorBlack':!booleanColor}"
-				  class="nav-link fontMenu menuPosition" href="/"
-				  >Inicio</a
+<div *ngIf="booleanColor">
+	<div class="bg-transparent rounded position-sticky sticky-top topBar">
+		<div class="bg-transparent rounded">
+		  <nav class="navbar navbar-expand-md navbar-light">
+				  <div
+				  class="collapse navbar-collapse order-1 order-md-0"
+				  id="itemCollapse"
 				>
-			  </li>
-			  <li class="nav-item navItem">
-				<div ngbDropdown class="dropdown">
-				  <a [ngClass]="{'colorWhite':booleanColor,'colorBlack':!booleanColor}"
-					class="nav-link dropdown-toggle  fontMenu menuPosition"
-					href="#"
-					role="button"
-					id="dropdownMenuLink"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false"
-				  >
-					Acerca de
-				  </a>
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item fontMenu" href="comunidad"
-					  >La comunidad campesina</a
-					>
-					<a class="dropdown-item fontMenu" href="empresas"
-					  >Entidades asociadas</a
-					>
-				  </div>
+				  <ul class="navbar-nav ml-auto">
+					<li class="nav-item navItem">
+					  <a
+						class="nav-link fontMenu menuPosition" href="/"
+						>Inicio</a
+					  >
+					</li>
+					<li class="nav-item navItem">
+					  <div ngbDropdown class="dropdown">
+						<a
+						  class="nav-link dropdown-toggle  fontMenu menuPosition"
+						  href="#"
+						  role="button"
+						  id="dropdownMenuLink"
+						  data-toggle="dropdown"
+						  aria-haspopup="true"
+						  aria-expanded="false"
+						>
+						  Acerca de
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						  <a class="dropdown-item fontMenu" href="comunidad"
+							>La comunidad campesina</a
+						  >
+						  <a class="dropdown-item fontMenu" href="empresas"
+							>Entidades asociadas</a
+						  >
+						</div>
+					  </div>
+					  <!-- <a ngbDropdown class="nav-link colorWhite">Acerca de</a> -->
+					</li>
+				  </ul>
 				</div>
-				<!-- <a ngbDropdown class="nav-link colorWhite">Acerca de</a> -->
-			  </li>
-			</ul>
-		  </div>
-		
-      
-      <div class="mx-auto my-2 order-0 order-md-1">
-        <a class="navbar-brand mimos-titulo" href="/">
-          <img src="assets/Logo.png" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#itemCollapse"
-          aria-controls="itemCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div
-        class="collapse navbar-collapse order-2 order-md-2"
-        id="itemCollapse"
-      >
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item navItem">
-            <a [ngClass]="{'colorWhite':booleanColor,'colorBlack':!booleanColor}"
-              class="nav-link  fontMenu menuPosition"
-              href="campesinos"
-              >Soy Campesino</a
-            >
-          </li>
-          <li class="nav-item navItem">
-            <a [ngClass]="{'colorWhite':booleanColor,'colorBlack':!booleanColor}"
-              class="nav-link  fontMenu menuPosition"
-              href="quieroAyudar"
-              >Quiero Apoyar</a
-            >
-          </li>
-        </ul>
+			  
+			
+			<div class="mx-auto my-2 order-0 order-md-1">
+			  <a class="navbar-brand mimos-titulo" href="/">
+				<img src="assets/Logo.png" />
+			  </a>
+			  <button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#itemCollapse"
+				aria-controls="itemCollapse"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			  >
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			</div>
+			<div
+			  class="collapse navbar-collapse order-2 order-md-2"
+			  id="itemCollapse"
+			>
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item navItem">
+				  <a 
+					class="nav-link  fontMenu menuPosition"
+					href="campesinos"
+					>Soy Campesino</a
+				  >
+				</li>
+				<li class="nav-item navItem">
+				  <a 
+					class="nav-link  fontMenu menuPosition"
+					href="quieroAyudar"
+					>Quiero Apoyar</a
+				  >
+				</li>
+			  </ul>
+			</div>
+		  </nav>
+		</div>
 	  </div>
-    </nav>
-  </div>
+	  
 </div>
