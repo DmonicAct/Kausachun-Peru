@@ -98,6 +98,7 @@ export class adminCampesinoComponent implements OnInit {
     "tipo",
     "provincia",
     "estado",
+    "details",
   ];
 
   constructor() {

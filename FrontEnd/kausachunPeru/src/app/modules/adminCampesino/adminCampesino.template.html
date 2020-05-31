@@ -68,6 +68,18 @@
                 <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
             </ng-container>
 
+            <ng-container matColumnDef="details">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Details </th>
+                <td mat-cell *matCellDef="let element">
+                 <!--  <button (click)="redirectToDetails(element)">
+                      <mat-icon class="mat-18"></mat-icon>
+                  </button> -->
+                   <button [routerLink]="['/admin/campesinos/detalle']">
+                      <mat-icon class="mat-18"></mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
