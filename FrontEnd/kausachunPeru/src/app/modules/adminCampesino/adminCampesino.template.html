@@ -1,0 +1,69 @@
+<div class="divAdminCampesino p-4">
+    <div class="row d-flex justify-content-around my-5 ">
+        <h1>Campesinos</h1>
+        <label class="form-check-label">
+            <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                checked>
+            Todos</label>
+        <label class="form-check-label">
+            <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios2"
+                value="option2">
+            Pendiente</label>
+        <label class="form-check-label">
+            <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios2"
+                value="option2">
+            Aprobado</label>
+        <label class="form-check-label">
+            <input class="form-check-input radio-inline" type="radio" name="gridRadios" id="gridRadios2"
+                value="option2">
+            Rechazado</label>
+    </div>
+    <div>
+        <mat-form-field>
+            <mat-label>Busqueda</mat-label>
+            <input matInput type="text" (keyup)="applyFilter($event)" placeholder="Buscar....">
+        </mat-form-field>
+
+        <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+            <ng-container matColumnDef="cod">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Codigo </th>
+                <td mat-cell *matCellDef="let element"> {{element.cod}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="apellido">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Apellido </th>
+                <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="dni">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> DNI </th>
+                <td mat-cell *matCellDef="let element"> {{element.dni}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="tipo">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Tipo </th>
+                <td mat-cell *matCellDef="let element"> {{element.tipo}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="provincia">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Provincia </th>
+                <td mat-cell *matCellDef="let element"> {{element.provincia}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="estado">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Estado </th>
+                <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="5"></mat-paginator>
+    </div>
+</div>

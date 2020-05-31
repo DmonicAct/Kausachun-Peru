@@ -54,6 +54,13 @@ const routes: Routes = [
         (m) => m.adminGeneralModule
       ),
   },
+  {
+    path: "admin/campesinos",
+    loadChildren: () =>
+      import("./modules/adminCampesino/adminCampesino.module").then(
+        (m) => m.adminCampesinoModule
+      ),
+  },
 ];
 
 @NgModule({
