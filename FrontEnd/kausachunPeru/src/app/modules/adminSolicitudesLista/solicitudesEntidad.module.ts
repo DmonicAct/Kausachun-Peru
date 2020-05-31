@@ -33,6 +33,7 @@ const routes: Routes = [
     MatIconModule
   ],
   imports: [
+    RouterModule,
     CommonModule,
     FormsModule,
     MatInputModule,
