@@ -1,0 +1,27 @@
+.icon  {
+    color: #EFE5E0;
+}
+
+
+.float {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 1.5em;
+    height: 1.5em;
+/*     border-color: transparent; */
+  }
+
+  .circulo {
+    width: 55px;
+    height: 55px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+
+.iconclass{
+    width: 30px;
+    height: 30px;
+}

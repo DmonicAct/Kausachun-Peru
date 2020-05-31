@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
 import { SidebarModule } from './component/sidebar/sidebar.module';
 import { FormsModule } from '@angular/forms';
+import { WhatsAppModule } from './component/whatsapp-button/whatsapp.module';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     HttpClientModule,
     FormsModule,
+    WhatsAppModule,
     HeaderModule,
     FooterModule,
     SidebarModule,

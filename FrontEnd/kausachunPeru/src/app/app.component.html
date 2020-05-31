@@ -2,6 +2,8 @@
 <div>
     <sidebar-component *ngIf="booleanAdmin"></sidebar-component>
     <header-component #header></header-component>
+    <whatsapp-component *ngIf="!booleanAdmin"></whatsapp-component>
+    
     <router-outlet  (activate)="changeOfRoutes()"></router-outlet>
     <footer-component #footer></footer-component>
 </div>
