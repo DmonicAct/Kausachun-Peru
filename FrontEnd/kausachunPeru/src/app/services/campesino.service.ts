@@ -21,6 +21,38 @@ export class CampesinoService {
     this.urlPersona = this.apiEndpoint + "Persona/add";
   }
 
+  obtenerDatosPersonaId(id: string): Observable<any> {
+    let url = this.apiEndpoint + "Persona/" + id;
+
+    return this.http.get(url).pipe(
+      catchError((e) => {
+        if (e.status == 400) {
+          return throwError(e);
+        }
+        if (e.error.mensaje) {
+          console.error(e.error.mensaje);
+        }
+        return throwError(e);
+      })
+    );
+  }
+
+  obtenerSolicitudes(): Observable<any> {
+    let url = this.apiEndpoint + "Campesino/solicitudes";
+
+    return this.http.get(url).pipe(
+      catchError((e) => {
+        if (e.status == 400) {
+          return throwError(e);
+        }
+        if (e.error.mensaje) {
+          console.error(e.error.mensaje);
+        }
+        return throwError(e);
+      })
+    );
+  }
+
   guardarPersona(persona: personaModel) {
     console.log("BODY", JSON.stringify(persona));
     console.log("URL", this.urlPersona);
@@ -65,7 +97,7 @@ export class CampesinoService {
     this.guardarPersona(persona).subscribe((response: any) => {
       console.log("PERSONA ADDED", response);
       formulario.fecha = new Date().toISOString();
-      formulario.estado = "1";
+      formulario.estado = "3";
       this.guardaFormulario(formulario, response.body.id).subscribe(
         (responseForm: any) => {
           console.log("FORMULARIO ADDED", responseForm, formulario, response);
