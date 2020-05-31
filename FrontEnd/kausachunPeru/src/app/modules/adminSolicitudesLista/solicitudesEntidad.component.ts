@@ -4,65 +4,64 @@ import { Router } from '@angular/router';
 export interface tableElement {
   cod: string;
   name: string;
-  apellido: string;
-  dni: string;
   tipo: string;
+  contacto: string;
+  estado: string;
 }
-
 const ELEMENT_DATA: tableElement[] = [
   {
     cod: "00001",
     name: "Entidad 1",
-    apellido: "Tipo 1",
-    dni: "111111111",
-    tipo: "Pendiente"
+    tipo: "Tipo 1",
+    contacto: "111111111",
+    estado: "Pendiente"
     
   },
   {
     cod: "00002",
     name: "Entidad 2",
-    apellido: "Tipo 2",
-    dni: "222222222",
-    tipo: "Aprobado"
+    tipo: "Tipo 2",
+    contacto: "222222222",
+    estado: "Aprobado"
     
   },
   {
     cod: "00003",
     name: "Entidad 3",
-    apellido: "Tipo 3",
-    dni: "333333333",
-    tipo: "Aprobado"
+    tipo: "Tipo 3",
+    contacto: "333333333",
+    estado: "Aprobado"
     
   },
   {
     cod: "00004",
     name: "Entidad 4",
-    apellido: "Tipo 4",
-    dni: "444444444",
-    tipo: "Rechazado"
+    tipo: "Tipo 4",
+    contacto: "444444444",
+    estado: "Rechazado"
     
   },
   {
     cod: "00005",
     name: "Entidad 5",
-    apellido: "Tipo 5",
-    dni: "555555555",
-    tipo: "Rechazado"
+    tipo: "Tipo 5",
+    contacto: "555555555",
+    estado: "Rechazado"
     
   },
   {
     cod: "00006",
     name: "Entidad 6",
-    apellido: "Tipo 6",
-    dni: "666666666",
-    tipo: "Pendiente"
+    tipo: "Tipo 6",
+    contacto: "666666666",
+    estado: "Pendiente"
   },
   {
     cod: "00007",
     name: "Entidad 7",
-    apellido: "Tipo 7",
-    dni: "777777777",
-    tipo: "Aprobado"
+    tipo: "Tipo 7",
+    contacto: "777777777",
+    estado: "Aprobado"
     
   },
 ];
@@ -83,10 +82,10 @@ export class SolicitudesEntidadComponent implements OnInit {
   displayedColumns: string[] = [
     "cod",
     "name",
-    "apellido",
-    "dni",
     "tipo",
-    'details'
+    "contacto",
+    "estado",
+    "details"
   ];
 
   constructor(private router:Router) {
@@ -111,8 +110,13 @@ export class SolicitudesEntidadComponent implements OnInit {
     this.selectedRowIndex = row.id;
   }
 
-  redirectToDetails(id:number){
+ /*  redirectToDetails(id){
+    debugger;
+ 
+  } */
+  public redirectToDetails = (id: string) => {
     console.log(id);
     this.router.navigate['/home']
   }
+ 
 }
