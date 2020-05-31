@@ -1,142 +1,173 @@
 <div class="row">
-    <div class="col-lg-12">
-        <div class="ibox-content">
-            <div class="introduccion p-5">
-                <div class="row text-center" style="margin-top: 80px;">
-                    <div class="col-lg-12">
-                        <h3 class="my-0 colorPastel letraAbril40">Soy Campesino</h3>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-12 py-5">
-                        <p class="colorPastel letraOpenSans16" style="margin-left: 30%; margin-right: 30%;">
-                            Si usted pertenece a la comunidad campesina y está buscando ayuda, este es el
-                            espacio el cual le conectará con las entidades responsables para asesorarlos y
-                            encontrar la solución
-                        </p>
-                        <button class="btn btn-dark btnVerMas letraOpenSans18 rounded-0"
-                            (click)="goToSection('formularioCampesino')">Continuar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="problemasCampesinos p-5">
-                <div class="form-group text-center">
-                    <h3 class="letraAbril40">¿Qué estas buscando?</h3>
-                    <p class="letraOpenSans16">Seleccione la imagen que represente mejor su problema</p>
-                </div>
-                <div class="row py-5">
-                    <div class="col-3 text-center">
-                        <img src="/assets/SoyCampesino/buscando1.png" alt="buscando1" />
-                        <p class="letraOpenSans16 problemText">Asesoramiento comercial y/o técnico</p>
-                    </div>
-                    <div class="col-3 text-center">
-                        <img src="/assets/SoyCampesino/buscando2.png" alt="buscando2" />
-                        <p class="letraOpenSans16 problemText">Financiamiento con intereses preferenciales</p>
-                    </div>
-                    <div class="col-3 text-center">
-                        <img src="/assets/SoyCampesino/buscando3.png" alt="buscando3" />
-                        <p class="letraOpenSans16 problemText">Medios para distribución</p>
-                    </div>
-                    <div class="col-3 text-center">
-                        <img src="/assets/SoyCampesino/buscando4.png" alt="buscando4" />
-                        <p class="letraOpenSans16 problemText">Otros</p>
-                    </div>
-                </div>
-            </div>
-            <div id="formularioCampesino" class="formularioContacto py-5">
-                <div class="form-group">
-                    <div class="col-12">
-                        <h3 class="letraAbril40Form">Formulario de Contacto</h3>
-                        <p class="letraOpenSans16Form text-justify">Llene los siguientes campos para enviar su solicitud
-                            a la entidad
-                            responsable y poder evaluar su caso. De esta maneram los encargados se comunicaran con usted
-                            para asesorarlo a través del medio de contacto que usted proporcione, sea vía télefono o
-                            correo electrónico.</p>
-                        <p class="letraOpenSans16Form"><i>*Campos Obligatorios</i></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="ibox-content">
-                            <form class="formulario form-horizontal">
-                                <div class="form-group">
-                                    <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Tipo Solicitud*</h2>
-                                        <select matNativeControl required class="letraOpenSans14">
-                                            <option value="volvo">Volvo</option>
-                                            <option value="saab">Saab</option>
-                                            <option value="mercedes">Mercedes</option>
-                                            <option value="audi">Audi</option>
-                                        </select>
-                                    </mat-form-field>
-                                </div>
-                                <div class="form-group">
-                                    <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Nombres*</h2>
-                                        <input matInput>
-                                    </mat-form-field>
-                                    <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Apellidos*</h2>
-                                        <input matInput>
-                                    </mat-form-field>
-                                </div>
-                                <div class="form-group">
-                                    <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">DNI*</h2>
-                                        <input matInput>
-                                    </mat-form-field>
-                                    <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Provincia*</h2>
-                                        <input matInput>
-                                    </mat-form-field>
-                                </div>
-                                <div class="form-group">
-                                    <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Telefono o celular de contacto*</h2>
-                                        <input matInput>
-                                    </mat-form-field>
-                                    <mat-form-field class="col-5">
-                                        <h2 class="letraOpenSans16Label">Correo Electrónico*</h2>
-                                        <input matInput>
-                                    </mat-form-field>
-                                </div>
-                                <div class="form-group">
-                                    <mat-form-field class="col-10">
-                                        <h2 class="letraOpenSans16Label">Detalle de su solicitud*</h2>
-                                        <textarea matInput rows="10"></textarea>
-                                    </mat-form-field>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center py-5">
-                        <button type="button" class="btn btn-light letraOpenSans18 rounded-0" style="width: 20%;">
-                            Enviar
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="problemasCampesinos py-5">
-                <div class="form-group text-center">
-                    <h3 class="letraAbril40">Conoce más</h3>
-                    <p class="letraOpenSans16">Sobre el contenido que ofrecemos en esta página para el apoyo a la
-                        comunidad campesina.</p>
-                </div>
-                <div class="row" style="margin-bottom: 20%;">
-                    <div class="col-4 text-center">
-                        <img src="/assets/SoyCampesino/conoce1.png" alt="buscando1" />
-                        <p class="letraOpenSans16 problemText">Entidades asociadas</p>
-                    </div>
-                    <div class="col-4 text-center">
-                        <img src="/assets/SoyCampesino/conoce2.png" alt="buscando2" />
-                        <p class="letraOpenSans16 problemText">La comunidad campesina en el Perú</p>
-                    </div>
-                    <div class="col-4 text-center">
-                        <img src="/assets/SoyCampesino/conoce3.png" alt="buscando3" />
-                        <p class="letraOpenSans16 problemText">Ayúdanos a mejorar</p>
-                    </div>
-                </div>
-            </div>
+  <div class="col-lg-12">
+    <div class="ibox-content">
+      <div class="introduccion p-5">
+        <div class="row text-center" style="margin-top: 80px;">
+          <div class="col-lg-12">
+            <h3 class="my-5 colorPastel letraAbril40">Soy Campesino</h3>
+          </div>
         </div>
+        <div class="row text-center">
+          <div class="col-lg-12 py-5">
+            <p
+              class="colorPastel letraOpenSans16"
+              style="margin-left: 25%; margin-right: 25%;"
+            >
+              Si usted pertenece a la comunidad campesina y está buscando ayuda,
+              este es el espacio el cual le conectará con las entidades
+              responsables para asesorarlos y encontrar la solución
+            </p>
+            <button
+              class="btn btn-dark btnVerMas letraOpenSans18 rounded-0"
+              (click)="goToSection('formularioCampesino')"
+            >
+              Continuar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="problemasCampesinos py-5" style="height: 588px;">
+        <div class="form-group text-center py-1">
+          <h3 class="letraAbril40">¿Qué estas buscando?</h3>
+          <p class="letraOpenSans16">
+            Seleccione la imagen que represente mejor su problema
+          </p>
+        </div>
+        <div class="row py-5 mt-5">
+          <div class="col-3 text-center">
+            <img src="/assets/SoyCampesino/buscando1.png" alt="buscando1" />
+            <p class="letraOpenSans16 problemText">
+              Asesoramiento comercial y/o técnico
+            </p>
+          </div>
+          <div class="col-3 text-center">
+            <img src="/assets/SoyCampesino/buscando2.png" alt="buscando2" />
+            <p class="letraOpenSans16 problemText">
+              Financiamiento con intereses preferenciales
+            </p>
+          </div>
+          <div class="col-3 text-center">
+            <img src="/assets/SoyCampesino/buscando3.png" alt="buscando3" />
+            <p class="letraOpenSans16 problemText">Medios para distribución</p>
+          </div>
+          <div class="col-3 text-center">
+            <img src="/assets/SoyCampesino/buscando4.png" alt="buscando4" />
+            <p class="letraOpenSans16 problemText">Otros</p>
+          </div>
+        </div>
+      </div>
+      <div id="formularioCampesino" class="formularioContacto py-5">
+        <div class="form-group">
+          <div class="col-12">
+            <h3 class="letraAbril40Form">Formulario de Contacto</h3>
+            <p class="letraOpenSans16Form text-justify">
+              Llene los siguientes campos para enviar su solicitud a la entidad
+              responsable y poder evaluar su caso. De esta maneram los
+              encargados se comunicaran con usted para asesorarlo a través del
+              medio de contacto que usted proporcione, sea vía télefono o correo
+              electrónico.
+            </p>
+            <p class="letraOpenSans16Form"><i>*Campos Obligatorios</i></p>
+          </div>
+        </div>
+        <div class="row" style="padding-top: 40px;">
+          <div class="col-12">
+            <div class="ibox-content">
+              <form class="formulario form-horizontal">
+                <div class="form-group py-2">
+                  <mat-form-field class="col-6">
+                    <h2 class="letraOpenSans16Label">Tipo Solicitud*</h2>
+                    <select matNativeControl required>
+                      <option value="1"
+                        >Asesoramiento comercial y/o Técnico</option
+                      >
+                      <option value="2"
+                        >Financiamiento con intereses preferenciales</option
+                      >
+                      <option value="3">Medios para distribución</option>
+                      <option value="4">Otros</option>
+                    </select>
+                  </mat-form-field>
+                </div>
+                <div class="form-group py-2">
+                  <mat-form-field class="col-6">
+                    <h2 class="letraOpenSans16Label">Nombres *</h2>
+                    <input matInput />
+                  </mat-form-field>
+                  <mat-form-field class="col-6">
+                    <h2 class="letraOpenSans16Label">Apellidos *</h2>
+                    <input matInput />
+                  </mat-form-field>
+                </div>
+                <div class="form-group py-2">
+                  <mat-form-field class="col-6">
+                    <h2 class="letraOpenSans16Label">DNI *</h2>
+                    <input matInput />
+                  </mat-form-field>
+                  <mat-form-field class="col-6">
+                    <h2 class="letraOpenSans16Label">Provincia *</h2>
+                    <input matInput />
+                  </mat-form-field>
+                </div>
+                <div class="form-group py-2">
+                  <mat-form-field class="col-6">
+                    <h2 class="letraOpenSans16Label">
+                      Teléfono o celular de contacto *
+                    </h2>
+                    <input matInput />
+                  </mat-form-field>
+                  <mat-form-field class="col-6">
+                    <h2 class="letraOpenSans16Label">Correo Electrónico *</h2>
+                    <input matInput />
+                  </mat-form-field>
+                </div>
+                <div class="form-group py-2">
+                  <mat-form-field class="col-12">
+                    <h2 class="letraOpenSans16Label">
+                      Detalle de su solicitud *
+                    </h2>
+                    <textarea matInput rows="10"></textarea>
+                  </mat-form-field>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 text-center py-5">
+            <button
+              type="button"
+              class="btn btn-light letraOpenSans18 rounded-0"
+              style="width: 20%;"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="problemasCampesinos py-5">
+        <div class="form-group text-center">
+          <h3 class="letraAbril40">Conoce más</h3>
+          <p class="letraOpenSans16">
+            Sobre el contenido que ofrecemos en esta página para el apoyo a la
+            comunidad campesina.
+          </p>
+        </div>
+        <div class="py-5 row">
+          <div class="col-4 text-center">
+            <img src="/assets/SoyCampesino/conoce1.png" alt="buscando1" />
+            <p class="letraOpenSans16 problemText">Entidades asociadas</p>
+          </div>
+          <div class="col-4 text-center">
+            <img src="/assets/SoyCampesino/conoce2.png" alt="buscando2" />
+            <p class="letraOpenSans16 problemText">
+              La comunidad campesina en el Perú
+            </p>
+          </div>
+          <div class="col-4 text-center">
+            <img src="/assets/SoyCampesino/conoce3.png" alt="buscando3" />
+            <p class="letraOpenSans16 problemText">Ayúdanos a mejorar</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
