@@ -5,6 +5,7 @@ import { formCampesino } from "../models/formularioCampesino";
 import { persona as personaModel } from "../models/persona";
 import { Observable, throwError } from "rxjs";
 import { catchError } from "rxjs/operators";
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: "root",
@@ -69,6 +70,11 @@ export class CampesinoService {
       this.guardaFormulario(formulario, response.body.id).subscribe(
         (responseForm: any) => {
           console.log("FORMULARIO ADDED", responseForm, formulario, response);
+          Swal.fire(
+            'Enviado',
+            'Su formulario ha sido enviado satisfactoriamente!',
+            'success'
+          )
         }
       );
     });
