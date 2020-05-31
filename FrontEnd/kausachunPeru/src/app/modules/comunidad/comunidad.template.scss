@@ -1,9 +1,17 @@
-.divTop {
-  background-image: url("../../../assets/ComunidadCampesina/Fondo1.png");
+.introduccion {
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("/assets/ComunidadCampesina/fondo4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: cover;
-  height: 70vh;
-  width: auto;
-  color: white;
+}
+
+.colorPastel {
+  color: #efe5e0;
 }
 
 .divHoyPorTi {
@@ -16,7 +24,7 @@
 }
 
 .sectionSoyCampesino {
-  background-image: url("../../../assets/ComunidadCampesina/soyCampesino.png");
+  background-image: url("/assets/ComunidadCampesina/soyCampesino.png");
   background-size: cover;
   height: 60vh;
 }
@@ -50,12 +58,13 @@
 
 .hoyPorMiWrap {
   width: 35vw;
-  padding-right: 4rem;
+
+  margin-left: 2vw;
 }
 
 .sangriaTextHoy {
   position: relative;
-  left: 16vw;
+  margin-left: 16vw;
 }
 
 .imgHoyPorTi {
@@ -96,6 +105,7 @@
   align-content: center;
   align-items: center;
   height: 45vh;
+  background-color: #efe5e0;
 }
 
 .textQuote {
@@ -126,18 +136,26 @@
 }
 
 .btnSoyCampesino {
-  background-color: none;
-  border-color: white;
-  color: white;
+  background-color: #efe5e0;
+  border: none;
+  color: #1d2610;
+  width: 170px;
+  height: 50px;
+}
+
+.btnSoyCampesino:hover {
+  background-color: #02050d;
+  border: none;
+  color: #efe5e0;
 }
 
 .divImportancia {
-  height: 40rem;
+  height: 30rem;
   background-color: #efe5e0;
 }
 
 .textImportancia {
-  width: 50vw;
+  width: 60%;
   color: black;
 }
 
@@ -149,4 +167,10 @@
 .btnSection2 {
   background-color: black;
   color: #efe5e0;
+}
+
+.letraOpenSans18 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.02rem;
+  font-weight: bold;
 }

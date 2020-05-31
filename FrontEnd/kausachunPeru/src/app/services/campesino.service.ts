@@ -21,6 +21,38 @@ export class CampesinoService {
     this.urlPersona = this.apiEndpoint + "Persona/add";
   }
 
+  obtenerDatosPersonaId(id: string): Observable<any> {
+    let url = this.apiEndpoint + "Persona/" + id;
+
+    return this.http.get(url).pipe(
+      catchError((e) => {
+        if (e.status == 400) {
+          return throwError(e);
+        }
+        if (e.error.mensaje) {
+          console.error(e.error.mensaje);
+        }
+        return throwError(e);
+      })
+    );
+  }
+
+  obtenerSolicitudes(): Observable<any> {
+    let url = this.apiEndpoint + "Campesino/solicitudes";
+
+    return this.http.get(url).pipe(
+      catchError((e) => {
+        if (e.status == 400) {
+          return throwError(e);
+        }
+        if (e.error.mensaje) {
+          console.error(e.error.mensaje);
+        }
+        return throwError(e);
+      })
+    );
+  }
+
   guardarPersona(persona: personaModel) {
     console.log("BODY", JSON.stringify(persona));
     console.log("URL", this.urlPersona);
@@ -37,25 +69,40 @@ export class CampesinoService {
     );
   }
 
+  guardaFormulario(formulario: formCampesino, idPersona: string) {
+    const obj = {
+      detalle: formulario.detalle,
+      comentario: "",
+      fecha: formulario.fecha,
+      idEstado: formulario.estado,
+      idTipo: formulario.tipoSolicitud,
+      idPersona: idPersona,
+    };
+    return this.http.post(this.urlCampesino, obj).pipe(
+      catchError((e) => {
+        if (e.status == 400) {
+          return throwError(e);
+        }
+        if (e.error.mensaje) {
+          console.error(e.error.mensaje);
+        }
+        return throwError(e);
+      })
+    );
+  }
+
   guardarFormularioCampesino(formulario: formCampesino, persona: personaModel) {
     console.log("FORMULARIO", formulario);
 
-    const personaAdded = this.guardarPersona(persona).subscribe();
-
-    console.log("PERSONA ADDED", personaAdded);
-    // formulario.fecha = new Date().toISOString();
-    // formulario.estado = "1";
-    // console.log("FORM CAMPESINO", JSON.stringify(formulario));
-    // return this.http.post(this.apiEndpoint, JSON.stringify(formulario)).pipe(
-    //   catchError((e) => {
-    //     if (e.status == 400) {
-    //       return throwError(e);
-    //     }
-    //     if (e.error.mensaje) {
-    //       console.error(e.error.mensaje);
-    //     }
-    //     return throwError(e);
-    //   })
-    // );
+    this.guardarPersona(persona).subscribe((response: any) => {
+      console.log("PERSONA ADDED", response);
+      formulario.fecha = new Date().toISOString();
+      formulario.estado = "3";
+      this.guardaFormulario(formulario, response.body.id).subscribe(
+        (responseForm: any) => {
+          console.log("FORMULARIO ADDED", responseForm, formulario, response);
+        }
+      );
+    });
   }
 }

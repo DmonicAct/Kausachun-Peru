@@ -28,6 +28,7 @@ import { WhatsAppModule } from './component/whatsapp-button/whatsapp.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
