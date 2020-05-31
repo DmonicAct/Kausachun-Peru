@@ -1,58 +1,65 @@
 .adminGeneral {
-    background-color: #efe5e0;
-  }
-  
+  background-color: #efe5e0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 265px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1d2610;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  //padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #efe5e0;
+  display: block;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.sidenav a:hover {
+  color: #a7a970;
+}
+
+.salir {
+  margin-top: 150px;
+}
+
+.item {
+  padding: 20px 50px 20px 50px;
+}
+
+.logo {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.main {
+  margin-left: 265px; //igual que sidebar
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.titulo {
+  padding: 20px 0px 20px 30px;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
   .sidenav {
-    height: 100%;
-    width: 265px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #1d2610;
-    overflow-x: hidden;
+    padding-top: 15px;
   }
-  
   .sidenav a {
-    //padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    color: #efe5e0;
-    display: block;
-    font-family: Abril Fatface;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    padding: 20px 50px 20px 50px;
   }
-  
-  .sidenav a:hover {
-    color: #a7a970;
-  }
-  
-  .salir {
-    margin-top: 150px;
-  }
-  
-  .main {
-    margin-left: 265px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-  
-  .titulo {
-    padding: 20px 0px 20px 30px;
-    font-family: Abril Fatface;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-    .sidenav a {
-      font-size: 18px;
-    }
-  }
-  
+}

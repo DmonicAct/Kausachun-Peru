@@ -1,12 +1,12 @@
 <div class="sidenav">
-    <div class="mx-auto my-2 order-0 order-md-1">
-      <a class="navbar-brand mimos-titulo logo" href="/">
-        <img src="assets/Logo.png" />
-      </a>
-    </div>
-    <a href="/admin/general">General</a>
-    <a href="/admin/campesinos">Campesinos</a>
-    <a [routerLink]="['/admin/solicitudes_entidad']">Entidades</a>
-    <a href="/admin/eventos">Eventos</a>
-    <a [routerLink]="['/home']">Cerrar Sesión</a>
-</div> 
+  <div class="mx-auto my-2 order-0 order-md-1">
+    <a class="navbar-brand mimos-titulo logo" href="/">
+      <img src="assets/LogoAdmin.svg" />
+    </a>
+  </div>
+  <a class="item" href="/admin/general">General</a>
+  <a class="item" href="/admin/campesinos">Campesinos</a>
+  <a class="item" [routerLink]="['/admin/solicitudes_entidad']">Entidades</a>
+  <a class="item" href="/admin/eventos">Eventos</a>
+  <a class="item" [routerLink]="['/home']">Cerrar Sesión</a>
+</div>
