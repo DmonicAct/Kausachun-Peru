@@ -9,6 +9,7 @@ import {
   MatSortModule,
   MatTableModule,
   MatFormFieldModule,
+  MatIconModule,
 } from "@angular/material";
 
 const routes: Routes = [
@@ -36,6 +37,7 @@ const routes: Routes = [
     MatProgressSpinnerModule,
     MatSortModule,
     MatFormFieldModule,
+    MatIconModule,
     RouterModule.forChild([
       {
         path: "",

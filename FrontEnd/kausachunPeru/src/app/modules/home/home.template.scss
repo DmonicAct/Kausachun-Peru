@@ -3,7 +3,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url("/assets/Inicio/fondo.png");
+  background: url("/assets/Inicio/fondo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -17,7 +17,16 @@
   color: #efe5e0;
 }
 .black-background {
-  background-color: #000000;
+  background-color: #02050d;
+  border: none;
+  color: #a7a970;
+  width: 170px;
+  height: 50px;
+}
+.black-background:hover {
+  background-color: #efe5e0;
+  border: none;
+  color: #02050d;
 }
 .colorTransparente {
   color: transparent;
@@ -46,7 +55,10 @@
 
 .letraOpenSans16 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.02rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
 }
 
 .letraOpenSans18 {
@@ -58,4 +70,74 @@
 .letraOpenSans14 {
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
+}
+
+.longTitulo {
+  display: inline-block;
+  width: 559px;
+  line-height: 54px;
+}
+
+.longSubtitulo {
+  width: 418px;
+  line-height: 22px;
+}
+
+.btn-outline-light {
+  border: 2px solid #efe5e0;
+  color: #efe5e0;
+  width: 170px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+.btn-outline-light:hover {
+  background-color: #02050d;
+  border: none;
+  color: #efe5e0;
+}
+
+.btn-outline-dark {
+  background-color: rgb(239, 229, 224, 0.2);
+  border: 2px solid #02050d;
+  color: #02050d;
+  width: 170px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+.btn-outline-dark:hover {
+  background-color: #efe5e0;
+  border: none;
+  color: #02050d;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: #efe5e0;
+  border: none;
+  color: #1d2610;
+  width: 170px;
+  height: 50px;
+}
+.btn-light:hover {
+  background-color: #02050d;
+  border: none;
+  color: #efe5e0;
+}
+
+.black-background-grn {
+  background-color: #02050d;
+  border: none;
+  color: #efe5e0;
+  width: 170px;
+  height: 50px;
+}
+.black-background-grn:hover {
+  background-color: #1d2610;
+  border: none;
+  color: #efe5e0;
 }

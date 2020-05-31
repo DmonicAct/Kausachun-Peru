@@ -1,0 +1,48 @@
+.divAdminCampesino {
+  background-color: #efe5e0;
+  margin-left: 16rem;
+  width: auto;
+  min-height: fit-content;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+[mat-row].remove-background {
+  background: none ;
+}
+
+.highlight{
+  background: #42A948; /* green */
+}
+
+CSS
+table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 500px;
+}
+
+th.mat-header-cell {
+    text-align: left;
+    max-width: 300px;
+}
+
+table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 500px;
+}
+ 
+th.mat-header-cell {
+    text-align: left;
+    max-width: 300px;
+}
