@@ -25,3 +25,18 @@
 .logo {
   padding-left: 80px;
 }
+
+.dropdown-menu {
+  background-color: #02050d;
+  border: none;
+}
+
+.dropdown-item {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #efe5e0;
+}
+
+.dropdown-item:hover {
+  background-color: #efe5e07c;
+}
