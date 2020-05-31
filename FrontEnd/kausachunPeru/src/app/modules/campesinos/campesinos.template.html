@@ -9,28 +9,18 @@
         </div>
         <div class="row text-center">
           <div class="col-lg-12 py-5">
-            <p
-              class="colorPastel letraOpenSans16"
-              style="margin-left: 25%; margin-right: 25%;"
-            >
+            <p class="colorPastel letraOpenSans16" style="margin-left: 25%; margin-right: 25%;">
               Si usted pertenece a la comunidad campesina y está buscando ayuda,
               este es el espacio el cual le conectará con las entidades
               responsables para asesorarlos y encontrar la solución
             </p>
-            <button
-              class="btn btn-dark btnVerMas letraOpenSans18 rounded-0"
-              (click)="goToSection('seccionBuscando')"
-            >
+            <button class="btn btn-dark btnVerMas letraOpenSans18 rounded-0" (click)="goToSection('seccionBuscando')">
               Continuar
             </button>
           </div>
         </div>
       </div>
-      <div
-        id="seccionBuscando"
-        class="problemasCampesinos py-5"
-        style="height: 588px;"
-      >
+      <div id="seccionBuscando" class="problemasCampesinos py-5" style="height: 588px;">
         <div class="form-group text-center py-1">
           <h3 class="letraAbril40">
             ¿Está buscando alguno de estos tipos de ayuda?
@@ -62,10 +52,8 @@
           </div>
 
           <div class="col-lg-12 py-5 text-center">
-            <button
-              class="btn btn-dark btnVerMas letraOpenSans18 rounded-0"
-              (click)="goToSection('formularioCampesino')"
-            >
+            <button class="btn btn-dark btnVerMas letraOpenSans18 rounded-0"
+              (click)="goToSection('formularioCampesino')">
               Sí
             </button>
           </div>
@@ -93,19 +81,9 @@
                 <div class="form-group py-2">
                   <mat-form-field class="col-6">
                     <h2 class="letraOpenSans16Label">Tipo Solicitud *</h2>
-                    <select
-                      name="select"
-                      matNativeControl
-                      required
-                      [(ngModel)]="selectedItem"
-                      class="letraOpenSans16"
-                    >
+                    <select name="select" matNativeControl required [(ngModel)]="selectedItem" class="letraOpenSans16">
                       <!-- <option value="" selected></option> -->
-                      <option
-                        *ngFor="let item of itemsTipoSolicitud"
-                        [value]="item.id"
-                        class="letraOpenSans16Combo"
-                      >
+                      <option *ngFor="let item of itemsTipoSolicitud" [value]="item.id" class="letraOpenSans16Combo">
                         {{item.nombre}}
                       </option>
                     </select>
@@ -114,19 +92,11 @@
                 <div class="form-group py-2">
                   <mat-form-field class="col-6">
                     <h2 class="letraOpenSans16Label">Nombres *</h2>
-                    <input
-                      matInput
-                      name="nombre"
-                      [(ngModel)]="formulario.nombres"
-                    />
+                    <input matInput name="nombre" [(ngModel)]="formulario.nombres" />
                   </mat-form-field>
                   <mat-form-field class="col-6">
                     <h2 class="letraOpenSans16Label">Apellidos *</h2>
-                    <input
-                      matInput
-                      name="apellidos"
-                      [(ngModel)]="formulario.apellidos"
-                    />
+                    <input matInput name="apellidos" [(ngModel)]="formulario.apellidos" />
                   </mat-form-field>
                 </div>
                 <div class="form-group py-2">
@@ -135,12 +105,12 @@
                     <input matInput name="dni" [(ngModel)]="formulario.dni" />
                   </mat-form-field>
                   <mat-form-field class="col-6">
-                    <h2 class="letraOpenSans16Label">Provincia *</h2>
-                    <input
-                      matInput
-                      name="provincia"
-                      [(ngModel)]="formulario.provincia"
-                    />
+                    <h2 class="letraOpenSans16Label">Departamento *</h2>
+                    <select name="select" matNativeControl required [(ngModel)]="selectedDpto" class="letraOpenSans16">
+                      <option *ngFor="let item of itemsDepartamentos" [value]="item.id" class="letraOpenSans16Combo">
+                        {{item.nombre}}
+                      </option>
+                    </select>
                   </mat-form-field>
                 </div>
                 <div class="form-group py-2">
@@ -148,19 +118,11 @@
                     <h2 class="letraOpenSans16Label">
                       Teléfono o celular de contacto *
                     </h2>
-                    <input
-                      matInput
-                      name="telefono"
-                      [(ngModel)]="formulario.telefono"
-                    />
+                    <input matInput name="telefono" [(ngModel)]="formulario.telefono" />
                   </mat-form-field>
                   <mat-form-field class="col-6">
                     <h2 class="letraOpenSans16Label">Correo Electrónico</h2>
-                    <input
-                      matInput
-                      name="correo"
-                      [(ngModel)]="formulario.correo"
-                    />
+                    <input matInput name="correo" [(ngModel)]="formulario.correo" />
                   </mat-form-field>
                 </div>
                 <div class="form-group py-2">
@@ -168,24 +130,15 @@
                     <h2 class="letraOpenSans16Label">
                       Detalle de su solicitud *
                     </h2>
-                    <textarea
-                      matInput
-                      name="detalle"
-                      rows="10"
-                      [(ngModel)]="formulario.detalle"
-                    ></textarea>
+                    <textarea matInput name="detalle" rows="10" [(ngModel)]="formulario.detalle"></textarea>
                   </mat-form-field>
                 </div>
               </form>
             </div>
           </div>
           <div class="col-12 text-center py-5">
-            <button
-              type="button"
-              class="btn btn-light letraOpenSans18 rounded-0"
-              style="width: 20%;"
-              (click)="OnGuardar()"
-            >
+            <button type="button" class="btn btn-light letraOpenSans18 rounded-0" style="width: 20%;"
+              (click)="OnGuardar()">
               Enviar
             </button>
           </div>
