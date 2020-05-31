@@ -83,6 +83,7 @@ import { solicitudesCampesinos } from "src/app/models/solicitudesCampesinos";
 //   },
 // ];
 
+
 @Component({
   selector: "adminCampesino-component",
   templateUrl: "adminCampesino.template.html",
@@ -100,9 +101,9 @@ export class adminCampesinoComponent implements OnInit {
     "nombrePersona",
     "apellidoPersona",
     "dniPersona",
-    "tipoSolicitud",
+    "idTipo",
     "dptoPersona",
-    "estadoSolicitud",
+    "idEstado",
     "detalle",
   ];
 
@@ -111,24 +112,27 @@ export class adminCampesinoComponent implements OnInit {
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer
   ) {
+    this.itemsSolCampesinos = new Array<solicitudesCampesinos>();
     // this.dataSource = new MatTableDataSource(ELEMENT_DATA);
     iconRegistry.addSvgIcon(
       "thumbs-up",
       sanitizer.bypassSecurityTrustResourceUrl("assets/Admin/buscarIcon.svg")
     );
-    this.service.obtenerSolicitudes().subscribe((res: any) => {
+     this.service.obtenerSolicitudes().subscribe((res: any) => {
       console.log("SOLICITUDES", res.body);
+
       res.body.map((item) => {
-        var soliCampe: solicitudesCampesinos;
+        let soliCampe=  new solicitudesCampesinos();
+        
         soliCampe.id = item.id;
         soliCampe.detalle = item.detalle;
-        soliCampe.comentario = item.comentario;
+        soliCampe.comentario = item.comentario?item.comentario:"";
         soliCampe.fecha = item.fecha;
         soliCampe.idEstado = item.idEstado;
         soliCampe.idTipo = item.idTipo;
         soliCampe.idPersona = item.idPersona;
         soliCampe.nombrePersona = item.persona.nombres;
-        soliCampe.apellidoPersona = item.persona.apellidoPersona;
+        soliCampe.apellidoPersona = item.persona.apellidos;
         soliCampe.dniPersona = item.persona.dni;
         soliCampe.tipoSolicitud = item.tipo.nombre;
         soliCampe.dptoPersona = item.persona.provincia.nombre;
@@ -138,6 +142,7 @@ export class adminCampesinoComponent implements OnInit {
       });
     });
     this.dataSource = new MatTableDataSource(this.itemsSolCampesinos);
+    console.log(this.dataSource);
   }
 
   ngOnInit(): void {
