@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["empresas.template.scss"],
 })
 export class EmpresasComponent implements OnInit {
+
   ngOnInit(): void {
     console.log("INIT EMRPESAS");
   }
