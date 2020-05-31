@@ -61,6 +61,13 @@ const routes: Routes = [
         (m) => m.adminCampesinoModule
       ),
   },
+  {
+    path: "admin/solicitudes_entidad",
+    loadChildren: () =>
+      import("./modules/adminSolicitudesLista/solicitudesEntidad.module").then(
+        (m) => m.SolicitudesEntidadModule
+      ),
+  },
 ];
 
 @NgModule({
