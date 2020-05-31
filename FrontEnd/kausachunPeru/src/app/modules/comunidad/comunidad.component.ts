@@ -15,5 +15,6 @@ export class ComunidadComponent implements OnInit {
 
   goToPage(ruta) {
     this.route.navigate([ruta]);
+    window.scrollTo(0, 0);
   }
 }

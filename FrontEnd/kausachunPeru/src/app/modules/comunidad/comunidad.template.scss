@@ -68,7 +68,7 @@
 }
 
 .imgHoyPorTi {
-  height: 20rem;
+  height: auto;
   width: auto;
 }
 
@@ -173,4 +173,18 @@
   font-family: "Open Sans", sans-serif;
   font-size: 1.02rem;
   font-weight: bold;
+}
+
+.btnAyuda {
+  background-color: #02050d;
+  border: none;
+  color: #efe5e0;
+  width: 170px;
+  height: 50px;
+}
+
+.btnAyuda:hover {
+  background-color: #1d2610;
+  border: none;
+  color: #efe5e0;
 }
