@@ -1,15 +1,17 @@
-.generalEmpresas {
-  background-image: url("../../../assets/Entidades/Fondo.png");
+.introduccion {
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("/assets/Entidades/fondo3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: cover;
-  height: 60vh;
-  width: auto;
-  color: white;
 }
 
-.entidadesEmpresas {
-  background-color: #efe5e0;
-  height: 110vh;
-  width: auto;
+.colorPastel {
+  color: #efe5e0;
 }
 
 .conoceEmpresas {
@@ -23,6 +25,12 @@
 .letraAbril40 {
   font-family: "Abril Fatface", cursive;
   font-size: 2.2rem;
+}
+
+.letraOpenSans16Center {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.02rem;
+  text-align: center;
 }
 
 .letraOpenSans16 {
@@ -40,27 +48,27 @@
   position: relative;
   top: 5vh;
   font-size: 2.5rem;
-  left: 5vw;
+  margin-left: 7vw;
 }
 
 .textoTopEnt {
   position: relative;
   top: 5vh;
   font-size: 2.5rem;
-  left: 5vw;
+  margin-left: 7vw;
 }
 
 .textoComplementario {
   position: relative;
   top: 6.2vh;
-  left: 5vw;
+  margin-left: 7vw;
   font-size: 1rem;
   width: 20rem;
 }
 .textoComplementarioEnt {
   position: relative;
   top: 6.2vh;
-  left: 5vw;
+  margin-left: 7vw;
   font-size: 1rem;
   width: 60vw;
 }
@@ -68,9 +76,18 @@
 .btnVerMas {
   position: relative;
   background-color: #efe5e0;
+  color: #02050d;
   top: 7.2vh;
-  left: 5vw;
+  margin-left: 7vw;
   width: 9rem;
+  border: none;
+  height: 50px;
+}
+
+.btnVerMas:hover {
+  background-color: #02050d;
+  border: none;
+  color: #efe5e0;
 }
 
 .cardEntidades {
@@ -82,7 +99,7 @@
 
 .entidadesDiv {
   position: relative;
-  left: 5vw;
+  margin-left: 7vw;
   top: 5vh;
 }
 
@@ -106,4 +123,15 @@
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.conoceEmpresas {
+  background-color: #1d2610;
+  height: 80vh;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.problemText {
+  font-weight: bold;
+  padding-top: 5%;
 }

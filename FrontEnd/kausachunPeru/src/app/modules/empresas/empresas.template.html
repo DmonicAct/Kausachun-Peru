@@ -1,133 +1,174 @@
-<div class="generalEmpresas p-5">
-    <h3 class="letraAbril40 textoTop">#DeLaChacraALaOlla</h3>
-    <p class="text-wrap limit textoComplementario">Reducir la cantidad de intermediarios y garantizar precios justos
-        para los campesinos, ayudándolos a que lleven sus productos directo hasta los mercados.</p>
-    <button class="btn btnVerMas mt-5">Ver más</button>
+<div class="introduccion p-5">
+  <h3 class="my-5 colorPastel letraAbril40 textoTop">#DeLaChacraALaOlla</h3>
+  <p class="text-wrap colorPastel limit textoComplementario">
+    Reducir la cantidad de intermediarios y garantizar precios justos para los
+    campesinos, ayudándolos a que lleven sus productos directo hasta los
+    mercados.
+  </p>
+  <button
+    class="btn btnVerMas letraOpenSans18 mt-5 rounded-0"
+    (click)="goToSection('seccionEntidad')"
+  >
+    Ver más
+  </button>
 </div>
-<div class="entidadesEmpresas p-5">
-    <h3 class="letraAbril40 textoTopEnt">Entidades Asociadas</h3>
-    <p class="text-wrap limit textoComplementarioEnt">
-        A la mejora de la vida de la comunidad campesina en el Perú, garantizando que obtengan los medios necesarios
-        para
-        comerciar sus productos y recibir precios justos. A la vez, brindar asesoramiento gratuito para mejorar la
-        calidad de
-        producción.
-    </p>
-    <div class="mt-5 entidadesDiv">
-        <div class="row">
-            <div class="col-sm-4 col-md-6">
-                <div class="card mb-3 cardEntidades">
-                    <div class="row no-gutters">
-                        <div class="col-md-2 pt-3">
-                            <img src="./../../../assets/Entidades/entidad1.png" class="card-img" alt="entidad1">
-                        </div>
-                        <div class="col-md-8 pl-1 mt-0 pt-0">
-                            <div class="card-body mt-0">
-                                <p class="card-title letraOpenSans16">Ministerio de Agricultura y Riego del Perú</p>
-                                <p class="card-text text-justify letraOpenSans14">Institución del Estado Peruano
-                                    encargada del sector
-                                    agrario.
-                                    Comprometidos con la seguridad alimentaria del país, para
-                                    lograr una mejor calidad de vida.</p>
-                                <p class="card-text letraOpenSans14">Teléfono: 01-345 6743</p>
-                                <p class="card-text letraOpenSans14">Correo electrónico:
-                                    minagri@gov.org.pe</p>
-                                <p class="card-text letraOpenSans14">Pagina web</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div id="seccionEntidad" class="entidadesEmpresas py-5">
+  <h3 class="letraAbril40 textoTopEnt">Entidades Asociadas</h3>
+  <p class="text-wrap limit textoComplementarioEnt">
+    A la mejora de la vida de la comunidad campesina en el Perú, garantizando
+    que obtengan los medios necesarios para comerciar sus productos y recibir
+    precios justos. A la vez, brindar asesoramiento gratuito para mejorar la
+    calidad de producción.
+  </p>
+  <div class="mt-5 entidadesDiv">
+    <div class="row">
+      <div class="col-sm-4 col-md-6">
+        <div class="card mb-3 cardEntidades">
+          <div class="row no-gutters">
+            <div class="col-md-2 pt-3">
+              <img
+                src="/assets/Entidades/entidad1.png"
+                class="card-img"
+                alt="entidad1"
+              />
             </div>
-            <div class="col-sm-4 col-md-6">
-                <div class="card mb-3 cardEntidades">
-                    <div class="row no-gutters">
-                        <div class="col-md-2 pt-3">
-                            <img src="./../../../assets/Entidades/entidad4.png" class="card-img" alt="entidad1">
-                        </div>
-                        <div class="col-md-8 pl-1 mt-0 pt-0">
-                            <div class="card-body mt-0">
-                                <p class="card-title letraOpenSans16">Confederación Nacional Agraria</p>
-                                <p class="card-text text-justify letraOpenSans14">Organización gremial de mujeres y
-                                    hombres campesinos, pequeños y medianos productores agrarios y pueblos originarios.
-                                    Defendiendo los intereses de los pueblos del campo</p>
-                                <p class="card-text letraOpenSans14">Teléfono: 01-428 2926</p>
-                                <p class="card-text letraOpenSans14">Correo electrónico: cna@cna.org.pe</p>
-                                <p class="card-text letraOpenSans14">Pagina web</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-8 pl-1 mt-0 pt-0">
+              <div class="card-body mt-0">
+                <p class="card-title letraOpenSans16">
+                  Ministerio de Agricultura y Riego del Perú
+                </p>
+                <p class="card-text text-justify letraOpenSans14">
+                  Institución del Estado Peruano encargada del sector agrario.
+                  Comprometidos con la seguridad alimentaria del país, para
+                  lograr una mejor calidad de vida.
+                </p>
+                <p class="card-text letraOpenSans14">Teléfono: 01-345 6743</p>
+                <p class="card-text letraOpenSans14">
+                  Correo electrónico: minagri@gov.org.pe
+                </p>
+                <p class="card-text letraOpenSans14">Pagina web</p>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 col-md-6">
-                <div class="card mb-3 cardEntidades">
-                    <div class="row no-gutters">
-                        <div class="col-md-2 pt-3">
-                            <img src="./../../../assets/Entidades/entidad2.png" class="card-img" alt="entidad1">
-                        </div>
-                        <div class="col-md-8 pl-1 mt-0 pt-0">
-                            <div class="card-body mt-0">
-                                <p class="card-title letraOpenSans16">Agrobanco</p>
-                                <p class="card-text text-justify letraOpenSans14">El principal instrumento de apoyo
-                                    financiero del Estado cuyo objetivo fundamental es promover y facilitar el
-                                    otorgamiento de créditos a los pequeños productores agropecuarios del Perú.</p>
-                                <p class="card-text letraOpenSans14">Teléfono: 01-615 0000</p>
-                                <p class="card-text letraOpenSans14">Correo electrónico: informer@agrobanco.org.pe</p>
-                                <p class="card-text letraOpenSans14">Pagina web</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="col-sm-4 col-md-6">
+        <div class="card mb-3 cardEntidades">
+          <div class="row no-gutters">
+            <div class="col-md-2 pt-3">
+              <img
+                src="/assets/Entidades/entidad4.png"
+                class="card-img"
+                alt="entidad1"
+              />
             </div>
-            <div class="col-sm-4 col-md-6">
-                <div class="card mb-3 cardEntidades">
-                    <div class="row no-gutters">
-                        <div class="col-md-2 pt-3">
-                            <img src="./../../../assets/Entidades/entidad3.png" class="card-img" alt="entidad1">
-                        </div>
-                        <div class="col-md-8 pl-1 mt-0 pt-0">
-                            <div class="card-body mt-0">
-                                <p class="card-title letraOpenSans16">Instituto Nacional de Innovación Agraria</p>
-                                <p class="card-text text-justify letraOpenSans14">Contribuye al crecimiento económico
-                                    equitativo, competitivo y sostenible a través de la provisión de servicios
-                                    especializados en materia de Innovación Agraria.</p>
-                                <p class="card-text letraOpenSans14">Teléfono: 01-240 2100 / 240 2350</p>
-                                <p class="card-text letraOpenSans14">Correo electrónico: informes@inia.gob.pe</p>
-                                <p class="card-text letraOpenSans14">Pagina web</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-8 pl-1 mt-0 pt-0">
+              <div class="card-body mt-0">
+                <p class="card-title letraOpenSans16">
+                  Confederación Nacional Agraria
+                </p>
+                <p class="card-text text-justify letraOpenSans14">
+                  Organización gremial de mujeres y hombres campesinos, pequeños
+                  y medianos productores agrarios y pueblos originarios.
+                  Defendiendo los intereses de los pueblos del campo
+                </p>
+                <p class="card-text letraOpenSans14">Teléfono: 01-428 2926</p>
+                <p class="card-text letraOpenSans14">
+                  Correo electrónico: cna@cna.org.pe
+                </p>
+                <p class="card-text letraOpenSans14">Pagina web</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-sm-4 col-md-6">
+        <div class="card mb-3 cardEntidades">
+          <div class="row no-gutters">
+            <div class="col-md-2 pt-3">
+              <img
+                src="/assets/Entidades/entidad2.png"
+                class="card-img"
+                alt="entidad1"
+              />
+            </div>
+            <div class="col-md-8 pl-1 mt-0 pt-0">
+              <div class="card-body mt-0">
+                <p class="card-title letraOpenSans16">Agrobanco</p>
+                <p class="card-text text-justify letraOpenSans14">
+                  El principal instrumento de apoyo financiero del Estado cuyo
+                  objetivo fundamental es promover y facilitar el otorgamiento
+                  de créditos a los pequeños productores agropecuarios del Perú.
+                </p>
+                <p class="card-text letraOpenSans14">Teléfono: 01-615 0000</p>
+                <p class="card-text letraOpenSans14">
+                  Correo electrónico: informer@agrobanco.org.pe
+                </p>
+                <p class="card-text letraOpenSans14">Pagina web</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-6">
+        <div class="card mb-3 cardEntidades">
+          <div class="row no-gutters">
+            <div class="col-md-2 pt-3">
+              <img
+                src="/assets/Entidades/entidad3.png"
+                class="card-img"
+                alt="entidad1"
+              />
+            </div>
+            <div class="col-md-8 pl-1 mt-0 pt-0">
+              <div class="card-body mt-0">
+                <p class="card-title letraOpenSans16">
+                  Instituto Nacional de Innovación Agraria
+                </p>
+                <p class="card-text text-justify letraOpenSans14">
+                  Contribuye al crecimiento económico equitativo, competitivo y
+                  sostenible a través de la provisión de servicios
+                  especializados en materia de Innovación Agraria.
+                </p>
+                <p class="card-text letraOpenSans14">
+                  Teléfono: 01-240 2100 / 240 2350
+                </p>
+                <p class="card-text letraOpenSans14">
+                  Correo electrónico: informes@inia.gob.pe
+                </p>
+                <p class="card-text letraOpenSans14">Pagina web</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="conoceEmpresas pt-5">
-    <h3 class="pt-4 letraAbril40">Conoce más</h3>
-    <p class="letraOpenSans14">Sobre el contenido que ofrecemos en esta página para el apoyo a la
-        comunidad campesina.
+<div class="conoceEmpresas py-5">
+  <div class="form-group text-center">
+    <h3 class="letraAbril40">Conoce más</h3>
+    <p class="letraOpenSans16Center">
+      Sobre el contenido que ofrecemos en esta página para el apoyo a la
+      comunidad campesina.
     </p>
-    <div class="container d-flex justify-content-around">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card cardConoce">
-                    <img src="./../../../assets/Entidades/conoce1.png" class="card-img-top" alt="conoce1">
-                    <h5 class="mt-3 letraOpenSans14">Soy campesino</h5>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card cardConoce">
-                    <img src="./../../../assets/Entidades/conoce2.png" class="card-img-top" alt="conoce2">
-                    <h5 class="mt-3 letraOpenSans14">La comunidad campesina en el Perú</h5>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card cardConoce">
-                    <img src="./../../../assets/Entidades/conoce3.png" class="card-img-top" alt="conoce3">
-                    <h5 class="mt-3 letraOpenSans14">Quiero apoyar</h5>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="py-5 row">
+    <div class="col-4 text-center">
+      <img src="/assets/Entidades/conoce1.png" alt="buscando1" />
+      <p class="letraOpenSans16 problemText">Soy Campesino</p>
     </div>
+    <div class="col-4 text-center">
+      <img src="/assets/Entidades/conoce2.png" alt="buscando2" />
+      <p class="letraOpenSans16 problemText">
+        La comunidad campesina en el Perú
+      </p>
+    </div>
+    <div class="col-4 text-center">
+      <img src="/assets/Entidades/conoce3.png" alt="buscando3" />
+      <p class="letraOpenSans16 problemText">Quiero Apoyar</p>
+    </div>
+  </div>
 </div>
