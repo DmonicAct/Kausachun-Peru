@@ -2,6 +2,8 @@ import { QuieroApoyarComponent } from './quieroApoyar.component'
 import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import {MatSelectModule} from '@angular/material/select';
 
 const routes: Routes = [
   {
@@ -16,6 +18,9 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule,
     RouterModule.forChild([
       {
         path: '',

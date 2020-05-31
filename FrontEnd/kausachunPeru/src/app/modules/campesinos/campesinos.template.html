@@ -4,15 +4,17 @@
             <div class="introduccion p-5">
                 <div class="row text-center" style="margin-top: 80px;">
                     <div class="col-lg-12">
-                        <h3>Soy Campesino</h3>
+                        <h3 class="my-0 colorPastel letraAbril40">Soy Campesino</h3>
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-lg-12">
-                        <p>Si usted pertenece a la comunidad campesina y está buscando ayuda, este es el</p>
-                        <p>espacio el cual le conectará con las entidades responsables para asesorarlos y</p>
-                        <p>encontrar la solución</p>
-                        <button class="btn btnVerMas">Continuar</button>
+                    <div class="col-lg-12 py-5">
+                        <p class="colorPastel letraOpenSans16" style="margin-left: 30%; margin-right: 30%;">
+                            Si usted pertenece a la comunidad campesina y está buscando ayuda, este es el
+                            espacio el cual le conectará con las entidades responsables para asesorarlos y
+                            encontrar la solución
+                        </p>
+                        <button class="btn btn-dark btnVerMas letraOpenSans18 rounded-0">Continuar</button>
                     </div>
                 </div>
             </div>
@@ -21,46 +23,31 @@
                     <h3 class="letraAbril40">¿Qué estas buscando?</h3>
                     <p class="letraOpenSans16">Seleccione la imagen que represente mejor su problema</p>
                 </div>
-                <div class="form-group text-center">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <div class="col-lg-1 text-center">
-                                <img src="./../../../assets/SoyCampesino/buscando1.png" class="card-img">
-                                <label class="letraOpenSans14">Asesoramiento comercial y/o técnico</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="col-lg-1 text-center">
-                                <img src="./../../../assets/SoyCampesino/buscando2.png" class="card-img">
-                                <label class="letraOpenSans14">Financiamiento con intereses preferenciales</label>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2">
-                            <div class="col-lg-1 text-center">
-                                <img src="./../../../assets/SoyCampesino/buscando3.png" class="card-img">
-                                <label class="letraOpenSans14">Medios para distribución</label>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2">
-                            <div class="col-lg-1 text-center">
-                                <img src="./../../../assets/SoyCampesino/buscando4.png" class="card-img">
-                                <label class="letraOpenSans14">Otros</label>
-                            </div>
-                        </div>
-
+                <div class="row py-5">
+                    <div class="col-3 text-center">
+                        <img src="/assets/SoyCampesino/buscando1.png" alt="buscando1" />
+                        <p class="letraOpenSans16 problemText">Asesoramiento comercial y/o técnico</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="/assets/SoyCampesino/buscando2.png" alt="buscando2" />
+                        <p class="letraOpenSans16 problemText">Financiamiento con intereses preferenciales</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="/assets/SoyCampesino/buscando3.png" alt="buscando3" />
+                        <p class="letraOpenSans16 problemText">Medios para distribución</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="/assets/SoyCampesino/buscando4.png" alt="buscando4" />
+                        <p class="letraOpenSans16 problemText">Otros</p>
                     </div>
                 </div>
-
             </div>
-            <div class="formularioContacto p-5">
+            <div class="formularioContacto py-5">
                 <div class="form-group">
-                    <div class="col-lg-9">
+                    <div class="col-12">
                         <h3 class="letraAbril40Form">Formulario de Contacto</h3>
-                        <!-- /div>
-                <div class="col-lg-9"> -->
-                        <p class="letraOpenSans16Form">Llene los siguientes campos para enviar su solicitud a la entidad
+                        <p class="letraOpenSans16Form text-justify">Llene los siguientes campos para enviar su solicitud
+                            a la entidad
                             responsable y poder evaluar su caso. De esta maneram los encargados se comunicaran con usted
                             para asesorarlo a través del medio de contacto que usted proporcione, sea vía télefono o
                             correo electrónico.</p>
@@ -68,11 +55,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-12">
                         <div class="ibox-content">
                             <form class="formulario form-horizontal">
                                 <div class="form-group">
-                                    <mat-form-field class="col-sm-6">
+                                    <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Tipo Solicitud*</h2>
                                         <select matNativeControl required class="letraOpenSans14">
                                             <option value="volvo">Volvo</option>
@@ -83,37 +70,37 @@
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
-                                    <mat-form-field class="col-sm-4">
+                                    <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Nombres*</h2>
                                         <input matInput>
                                     </mat-form-field>
-                                    <mat-form-field class="col-sm-4">
+                                    <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Apellidos*</h2>
                                         <input matInput>
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
-                                    <mat-form-field class="col-sm-4">
+                                    <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">DNI*</h2>
                                         <input matInput>
                                     </mat-form-field>
-                                    <mat-form-field class="col-sm-4">
+                                    <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Provincia*</h2>
                                         <input matInput>
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
-                                    <mat-form-field class="col-sm-4">
+                                    <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Telefono o celular de contacto*</h2>
                                         <input matInput>
                                     </mat-form-field>
-                                    <mat-form-field class="col-sm-4">
+                                    <mat-form-field class="col-5">
                                         <h2 class="letraOpenSans16Label">Correo Electrónico*</h2>
                                         <input matInput>
                                     </mat-form-field>
                                 </div>
                                 <div class="form-group">
-                                    <mat-form-field class="col-sm-8">
+                                    <mat-form-field class="col-10">
                                         <h2 class="letraOpenSans16Label">Detalle de su solicitud*</h2>
                                         <textarea matInput rows="10"></textarea>
                                     </mat-form-field>
@@ -121,47 +108,31 @@
                             </form>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="form-group">
-                    <div class="col-lg-12">
-                        <div class="col-lg-6">
-                           
-                              
-                        </div>
-                        <div class="col-lg-6">
-                            
-                        </div>
+                    <div class="col-12 text-center py-5">
+                        <button type="button" class="btn btn-light letraOpenSans18 rounded-0" style="width: 20%;">
+                            Enviar
+                        </button>
                     </div>
-                   
-                </div> -->
+                </div>
             </div>
-
-            <div class="conocemas p-5">
+            <div class="problemasCampesinos py-5">
                 <div class="form-group text-center">
                     <h3 class="letraAbril40">Conoce más</h3>
+                    <p class="letraOpenSans16">Sobre el contenido que ofrecemos en esta página para el apoyo a la
+                        comunidad campesina.</p>
                 </div>
-
-                <div class="form-group text-center">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="col-lg-2 text-center">
-                                <img src="./../../../assets/SoyCampesino/conoce1.png" class="card-img-conoce ">
-                                <label class="letraOpenSans14">Entidades asociadas</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="col-lg-2 text-center">
-                                <img src="./../../../assets/SoyCampesino/conoce2.png" class="card-img-conoce ">
-                                <label class="letraOpenSans14">La comunidad campesina en el Perú</label>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <div class="col-lg-2 text-center">
-                                <img src="./../../../assets/SoyCampesino/conoce3.png" class="card-img-conoce ">
-                                <label class="letraOpenSans14">Ayudanos a mejorar</label>
-                            </div>
-                        </div>
+                <div class="row" style="margin-bottom: 20%;">
+                    <div class="col-4 text-center">
+                        <img src="/assets/SoyCampesino/conoce1.png" alt="buscando1" />
+                        <p class="letraOpenSans16 problemText">Entidades asociadas</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="/assets/SoyCampesino/conoce2.png" alt="buscando2" />
+                        <p class="letraOpenSans16 problemText">La comunidad campesina en el Perú</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="/assets/SoyCampesino/conoce3.png" alt="buscando3" />
+                        <p class="letraOpenSans16 problemText">Ayúdanos a mejorar</p>
                     </div>
                 </div>
             </div>
