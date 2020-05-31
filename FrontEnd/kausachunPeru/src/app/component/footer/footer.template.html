@@ -1,44 +1,80 @@
-  <div *ngIf="booleanFooter" >
-    <footer class="footer" style="background-color: #02050D; padding-left: 15%; padding-right: 15%;">
-      <div class="container">
-        <div class="row">
-          <div class="col-8 py-5">
-            <img src="assets/Logo.png"/>
-            <p class="letraOpenSans14 colorOliva text-justify py-2" style="width: 70%;">
-              Iniciativa para conectar a las comunidades campesinas con los programas y entidades de apoyo,
-              para que puedan acceder a ellas de manera más fácil y poder comercializar sus productos directamente 
-              a un precio razonable. Asimismo, aumentar su presencia en el mercado para generar más oportunidades
-              de negocio.
-            </p>
-            <p class="letraOpenSans14 colorOliva text-justify" style="width: 70%;">
-              &copy; 2020 Kausachun Perú. Todos los derechos reservados.
-            </p>
+<div *ngIf="booleanFooter">
+  <footer
+    class="footer"
+    style="background-color: #02050d; padding-left: 15%; padding-right: 15%;"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-8 py-5">
+          <img src="assets/Logo.png" />
+          <p
+            class="letraOpenSans14 colorOliva text-justify py-2"
+            style="width: 80%;"
+          >
+            Iniciativa para conectar a las comunidades campesinas con los
+            programas y entidades de apoyo, para que puedan acceder a ellas de
+            manera más fácil y poder comercializar sus productos directamente a
+            un precio razonable. Asimismo, aumentar su presencia en el mercado
+            para generar más oportunidades de negocio.
+          </p>
+
+          <p
+            class="letraOpenSans14 colorOliva text-justify"
+            style="width: 70%;"
+          >
+            &copy; 2020 Kausachun Perú. Todos los derechos reservados.
+          </p>
+        </div>
+        <div class="col-4 py-5">
+          <h1 class="letraAbril16 colorOliva" style="margin-top: 5px;">
+            Contacto
+          </h1>
+          <div class="row">
+            <span
+              class="iconify my-3 mx-3"
+              data-inline="false"
+              data-icon="ic:baseline-email"
+              style="color: #717348; font-size: 24px;"
+            ></span>
+            <h1
+              class="letraOpenSans14 colorOliva"
+              style="margin-left: 10px; margin-top: 20px;"
+            >
+              kausachun.peru@gmail.com
+            </h1>
           </div>
-          <div class="col-4 py-5">
-            <h1 class="letraAbril16 colorOliva">Contacto</h1>
-            <div class="row">
-              <span class="iconify" data-inline="false" data-icon="ic:baseline-email" style="color: #717348; font-size: 24px;"></span>
-              <h1 class="letraOpenSans14 colorOliva py-1 px-1">kausachun.peru@gmail.com</h1>
-            </div>
-            <div class="row">
-              <span class="iconify" data-inline="false" data-icon="eva:phone-fill" style="color: #717348; font-size: 24px;"></span>
-              <h1 class="letraOpenSans14 colorOliva py-1 px-1">(511)2454998</h1>
-            </div>
+          <div class="row">
+            <span
+              class="iconify my-3 mx-3"
+              data-inline="false"
+              data-icon="eva:phone-fill"
+              style="color: #717348; font-size: 24px;"
+            ></span>
+            <h1
+              class="letraOpenSans14 colorOliva"
+              style="margin-left: 10px; margin-top: 20px;"
+            >
+              (511)2454998
+            </h1>
           </div>
         </div>
       </div>
+    </div>
   </footer>
-  </div>
-  <div *ngIf="!booleanFooter">
-    <footer class="footer" style="background-color: #efe5e0; padding-left: 15%; padding-right: 15%;">
-      <div>
-        <div class="row">
-          <div>
-            <p class="text-left" style="color: #efe5e0;">
-              &copy; 
-            </p>
-          </div>
+</div>
+<div *ngIf="!booleanFooter">
+  <footer
+    class="footer"
+    style="background-color: #efe5e0; padding-left: 15%; padding-right: 15%;"
+  >
+    <div>
+      <div class="row">
+        <div>
+          <p class="text-left" style="color: #efe5e0;">
+            &copy;
+          </p>
         </div>
       </div>
+    </div>
   </footer>
-  </div>
+</div>
