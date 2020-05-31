@@ -11,9 +11,11 @@ import { FooterComponent } from './component/footer/footer.component';
 })
 export class AppComponent implements OnInit {
   
+  public booleanAdmin:Boolean=false;
+
   @ViewChild("header",{static:false})
   public Header:HeaderComponent;
-  
+
   @ViewChild("footer",{static:false})
   public Footer:FooterComponent;
   public constructor(private router: Router) {
@@ -25,12 +27,15 @@ export class AppComponent implements OnInit {
   title = "kausachunPeru";
 
   changeOfRoutes(){
-    if(this.router.url === '/admin'){
+    if(this.router.url.startsWith('/admin')){
       this.Header.booleanColor=false;
       this.Footer.booleanFooter=false;
+      if(this.router.url.length>6)
+        this.booleanAdmin=true;
     }else{
       this.Header.booleanColor=true;
       this.Footer.booleanFooter=true;
+      this.booleanAdmin=false;
     }
   }
 }
