@@ -13,5 +13,6 @@ export class HomeComponent implements OnInit {
 
   goToPage(ruta) {
     this.route.navigate([ruta]);
+    window.scrollTo(0, 0);
   }
 }

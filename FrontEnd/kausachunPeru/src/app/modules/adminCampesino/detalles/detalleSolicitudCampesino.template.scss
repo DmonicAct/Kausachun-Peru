@@ -1,7 +1,8 @@
 .container-position {
   left: 265px;
   position: absolute;
-  height: 100%;
+  min-height: fit-content;
+  background-color: #efe5e0;
   width: auto;
 }
 .imgBack {

@@ -3,6 +3,7 @@
   margin-left: 16rem;
   width: auto;
   min-height: fit-content;
+  height: 100vh;
 }
 
 table {
@@ -15,6 +16,7 @@ table {
 }
 
 .iconLupa {
+  color: #717348;
   height: 1.5rem;
   width: 1.5rem;
   &:hover {
@@ -22,4 +24,23 @@ table {
     height: 1.8rem;
     width: 1.8rem;
   }
+}
+
+.titulo {
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+label {
+  font-family: Abril Fatface;
+  font-size: 16px;
+  font-style: bold;
+}
+
+th {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: bold;
 }
